@@ -224,6 +224,12 @@
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
+<<<<<<< HEAD
+=======
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
+>>>>>>> 67741b8957a0d3eace3cf56f4074674de664b191
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
