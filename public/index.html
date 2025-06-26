@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/public/styles/output.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=room_service" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body class="text-gray-600 font-nunito">
     <div class="grid md:grid-cols-4"> <!--page wrapper-->
@@ -15,27 +15,28 @@
                     <h1 class="font-bold uppercase text-xl lg:text-2xl">My Tailwind Css Food Order</h1>
                 </div>
                 <ul class="w-full flex flex-row items-center justify-center md:flex-col gap-4">
-                    <li class="md:my-4 md:w-full active"><a href="#" class="text-gray-700 active:text-amber-700 font-bold flex gap-3 items-center justify-center">
+                    <li class="md:my-4 md:w-full active">
+                        <a href="#home" class="text-gray-700 active:text-amber-700 font-bold flex gap-3 items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 hidden md:block">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                         </svg>
                         <span>Home</span></a>
                     </li>
                     <li class="my-4">
-                        <a href="#" class="text-gray-700 flex gap-3 items-center hover:text-primary hover:transition-all font-bold">
+                        <a href="#about" class="text-gray-700 flex gap-3 items-center hover:text-primary hover:transition-all font-bold">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 hidden md:block">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
                         </svg>
                         <span>About</span></a></li>
                     <li class="my-4">
-                        <a href="#" class="text-gray-700 flex gap-3 items-center hover:text-primary hover:transition-all font-bold">
+                        <a href="#services" class="text-gray-700 flex gap-3 items-center hover:text-primary hover:transition-all font-bold">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 hidden md:block">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0 0 15 0m-15 0a7.5 7.5 0 1 1 15 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077 1.41-.513m14.095-5.13 1.41-.513M5.106 17.785l1.15-.964m11.49-9.642 1.149-.964M7.501 19.795l.75-1.3m7.5-12.99.75-1.3m-6.063 16.658.26-1.477m2.605-14.772.26-1.477m0 17.726-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205 12 12m6.894 5.785-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
                         </svg>
                         <span>Services</span></a>
                     </li>
                     <li class="my-4">
-                        <a href="#" class="text-gray-700 flex gap-3 items-center hover:text-primary hover:transition-all font-bold">
+                        <a href="#footer" class="text-gray-700 flex gap-3 items-center hover:text-primary hover:transition-all font-bold">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 rotate-180 hidden md:block">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.25V18a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 18V8.25m-18 0V6a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 6v2.25m-18 0h18M5.25 6h.008v.008H5.25V6ZM7.5 6h.008v.008H7.5V6Zm2.25 0h.008v.008H9.75V6Z" />
                         </svg>
@@ -45,24 +46,28 @@
                 </ul>
             </nav>
         </div><!--nav end div-->
-        <main class="py-4 px-6 max-md:mt-40 bg-gray-50 md:col-span-3">
-            <div class="flex gap-4 justify-center md:justify-end">
-                <a href="#" class="btn text-orange-600 border-primary md:border-2 hover:bg-primary hover:text-white">Log in</a>
-                <a href="#" class="btn text-orange-600 border-primary md:border-2 hover:bg-primary hover:text-white">Sign up</a>
-            </div>
-            <header class="mb-4">
-                <h2 class="text-gray-700 font-bold text-6xl">Recipes</h2>
-                <h3 class="py-4">For Ninjas</h3>
-            </header>
-            <div>
+        <main class="py-4 px-6 max-md:mt-40 bg-gray-50 md:col-span-3">            
+            <div id="home" class="md:scroll-mt-4 scroll-mt-44">
+                <div class="flex gap-4 justify-center md:justify-end">
+                    <a href="#" class="btn text-orange-600 border-primary md:border-2 hover:bg-primary hover:text-white">Log in</a>
+                    <a href="#" class="btn text-orange-600 border-primary md:border-2 hover:bg-primary hover:text-white">Sign up</a>
+                </div>
+                <header class="mb-4">
+                    <h2 class="text-gray-700 font-bold text-6xl">Recipes</h2>
+                    <h3 class="py-4">For Ninjas</h3>
+                </header>
                 <h4 class="font-bold border-b border-gray-200 pb-2">Latest</h4>
                 <div class="mt-8 grid md:grid-cols-3 gap-10">
                     <!-- latest cards-->
                     <div class="card hover:shadow-2xl hover:shadow-gray-800 transition-all ease-in-out duration-500">
                         <img src="images/gallery2.png" alt="gallery2" class="w-full h-60 md:h-80 object-cover">
-                        <div class="flex flex-col gap-3 p-4">
+                        <div class="flex flex-col gap-4 p-4">
                             <span class="font-bold">Recipes name</span>
-                            <span class="text-sm text-gray-500">Author name</span>
+                            <div class="meta flex justify-between">
+                                <span class="text-sm text-gray-500">Author name</span>
+                                <span class="text-sm text-gray-500">25 August 2023</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, iste ea? Ipsa animi beatae ipsam consectetur quo ratione provident nam.</p>
                         </div>
                         <div class="card-badge">
                             <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -75,9 +80,13 @@
                     </div>
                     <div class="card hover:shadow-lg hover:shadow-gray-800 transition-all ease-in-out duration-500">
                         <img src="images/gallery4.png" alt="gallery4" class="w-full h-60 md:h-80 object-cover">
-                        <div class="flex flex-col gap-3 p-4">
+                        <div class="flex flex-col gap-4 p-4">
                             <span class="font-bold">Pizza</span>
-                            <span class="text-sm text-gray-500">Author name</span>
+                            <div class="meta flex justify-between">
+                                <span class="text-sm text-gray-500">Author name</span>
+                                <span class="text-sm text-gray-500">25 August 2023</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, iste ea? Ipsa animi beatae ipsam consectetur quo ratione provident nam.</p>
                         </div>
                         <div class="card-badge">
                             <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -90,9 +99,13 @@
                     </div>
                     <div class="card hover:shadow-lg hover:shadow-gray-800 transition-all ease-in-out duration-500">
                         <img src="images/noodles.jpg" alt="noodles" class="w-full h-60 md:h-80 object-cover">
-                        <div class="flex flex-col gap-3 p-4">
+                        <div class="flex flex-col gap-4 p-4">
                             <span class="font-bold">Noodles-Basic Recipe</span>
-                            <span class="text-sm text-gray-500">Author name</span>
+                            <div class="meta flex justify-between">
+                                <span class="text-sm text-gray-500">Author name</span>
+                                <span class="text-sm text-gray-500">20 December 2025</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, iste ea? Ipsa animi beatae ipsam consectetur quo ratione provident nam.</p>
                         </div>
                         <div class="card-badge">
                             <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -108,24 +121,36 @@
                 <div class="grid md:grid-cols-3 gap-10 my-8">
                     <!-- Most popular cards-->
                     <div class="card hover:shadow-gray-800 transition-all ease-in-out duration-500">
-                        <img src="images/gallery2.png" alt="gallery2" class="w-full h-60 md:h-80 object-cover">
-                        <div class="flex flex-col p-4">
+                        <img src="images/image-1.jpg.webp" alt="gallery2" class="w-full h-60 md:h-80 object-cover">
+                        <div class="flex flex-col gap-4 p-4">
                             <span class="font-bold">Recipes name</span>
-                            <span>Author name</span>
+                            <div class="meta flex justify-between">
+                                <span class="text-sm text-gray-500">Author name</span>
+                                <span class="text-sm text-gray-500">20 Feburary 2023</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, iste ea? Ipsa animi beatae ipsam consectetur quo ratione provident nam.</p>
                         </div>
                     </div>
                     <div class="card hover:shadow-gray-800 transition-all ease-in-out duration-500">
-                        <img src="images/gallery2.png" alt="gallery2" class="w-full h-60 md:h-80 object-cover">
-                        <div class="flex flex-col p-4">
+                        <img src="images/image_4.jpg.webp" alt="gallery2" class="w-full h-60 md:h-80 object-cover">
+                        <div class="flex flex-col gap-4 p-4">
                             <span class="font-bold">Recipes name</span>
-                            <span>Author name</span>
+                            <div class="meta flex justify-between">
+                                <span class="text-sm text-gray-500">Author name</span>
+                                <span class="text-sm text-gray-500">01 January 2025</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, iste ea? Ipsa animi beatae ipsam consectetur quo ratione provident nam.</p>
                         </div>
                     </div>
                     <div class="card hover:shadow-gray-800 transition-all ease-in-out duration-500">
-                        <img src="images/gallery2.png" alt="gallery2" class="w-full h-60 md:h-80 object-cover">
-                        <div class="flex flex-col p-4">
+                        <img src="images/image_6.jpg.webp" alt="gallery2" class="w-full h-60 md:h-80 object-cover">
+                        <div class="flex flex-col gap-4 p-4">
                             <span class="font-bold">Recipes name</span>
-                            <span>Author name</span>
+                            <div class="meta flex justify-between">
+                                <span class="text-sm text-gray-500">Author name</span>
+                                <span class="text-sm text-gray-500">01 April 2025</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, iste ea? Ipsa animi beatae ipsam consectetur quo ratione provident nam.</p>
                         </div>
                     </div>
                 </div>
@@ -134,60 +159,59 @@
                         Load More
                     </button>
                 </div>
-                <h4 id="about" class="font-bold border-b border-gray-200 my-8 pb-2">About</h4>
-                <div class="flex items-center gap-4 py-8">
-                    <img src="images/about2.png.webp" alt="">
-                    <div class="flex flex-col gap-4">
-                        <h2 class="font-bold text-6xl text-black font-Playfair mb-4">About this site</h2>
-                        <p class="text-justify w-1/2">This is a Tailwind Css project based on the youtube tailwindcss tutorial.
-                            If you want to follow the tutorial then click the link below.
-                        </p>    
-                        <span class="text-sm text-black">Note: the youtube tutorial does not completes all the site.</span>
-                        <a class="text-blue-600 underline mt-1" href="https://www.youtube.com/watch?v=bxmDnn7lrnk&list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw&index=1" target="_blank" rel="noopener noreferrer">
-                            Tailwind Css tutorial
-                        </a>
-                        
-                    </div>
-                </div> 
-                <h4 class="font-bold border-b border-gray-200 my-8 pb-2">Services</h4>
-                <div id="services" class="grid grid-cols-3 gap-14 my-16">
-                    <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
-                        <span class="material-symbols-outlined">room_service</span>
-                        <h2 class="font-bold text-2xl">Best Food Recipes</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
-                    </div>
-                    <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
-                        <span class="material-symbols-outlined">room_service</span>
-                        <h2 class="font-bold text-2xl">Best Food Recipes</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
-                    </div>
-                    <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
-                        <span class="material-symbols-outlined">room_service</span>
-                        <h2 class="font-bold text-2xl">Best Food Recipes</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
-                    </div>
-                    <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
-                        <span class="material-symbols-outlined">room_service</span>
-                        <h2 class="font-bold text-2xl">Best Food Recipes</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
-                    </div>
-                    <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
-                        <span class="material-symbols-outlined">room_service</span>
-                        <h2 class="font-bold text-2xl">Best Food Recipes</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
-                    </div>
-                    <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
-                        <span class="material-symbols-outlined">room_service</span>
-                        <h2 class="font-bold text-2xl">Best Food Recipes</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
-                    </div>
-                </div> 
             </div>
+            <h4 id="about" class="font-bold border-b border-gray-200 my-8 pb-2 scroll-mt-44 md:scroll-mt-24">About</h4>
+            <div class="flex flex-col md:items-center md:flex-row gap-4 py-8">
+                <img src="images/about2.png.webp" alt="">
+                <div class="flex flex-col gap-4">
+                    <h2 class="font-bold text-6xl text-black font-Playfair mb-4">About this site</h2>
+                    <p class="text-justify md:w-1/2 font-nunito">This is a Single page Tailwind Css project based on the youtube tailwindcss tutorial.
+                        If you want to follow the tutorial then click the link below.
+                    </p>    
+                    <span class="text-sm text-black">Note: the youtube tutorial does not completes all the site.</span>
+                    <a class="text-blue-600 underline mt-1 w-fit" href="https://www.youtube.com/watch?v=bxmDnn7lrnk&list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw&index=1" target="_blank" rel="noopener noreferrer">
+                        Tailwind Css tutorial
+                    </a>
+                </div>
+            </div> 
+            <h4 id="services" class="font-bold border-b border-gray-200 my-8 pb-2 md:scroll-mt-6 scroll-mt-44">Services</h4>
+            <div id="services" class="grid md:grid-cols-3 gap-14 my-16">
+                <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
+                    <span class="material-symbols-outlined">room_service</span>
+                    <h2 class="font-bold text-2xl">Best Food Recipes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
+                </div>
+                <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
+                    <span class="material-symbols-outlined">skillet</span>
+                    <h2 class="font-bold text-2xl">Best Food Recipes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
+                </div>
+                <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
+                    <span class="material-symbols-outlined">family_restroom</span>
+                    <h2 class="font-bold text-2xl">Best Food Recipes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
+                </div>
+                <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
+                    <span class="material-symbols-outlined">menu_book_2</span>
+                    <h2 class="font-bold text-2xl">Best Food Recipes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
+                </div>
+                <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
+                    <span class="material-symbols-outlined">lunch_dining</span>
+                    <h2 class="font-bold text-2xl">Best Food Recipes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
+                </div>
+                <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
+                    <span class="material-symbols-outlined">hand_meal</span>
+                    <h2 class="font-bold text-2xl">Best Food Recipes</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
+                </div>
+            </div> 
         </main>   
     </div>
-    <footer class="grid md:grid-cols-4">
-        <div class="col-span-1 bg-white h-10"></div>
-        <div class="py-14 px-24 bg-[#04091e] md:col-span-3 border-y border-gray-200">
+    <footer id="footer" class="grid md:grid-cols-4 scroll-mt-28">
+        <div class="col-span-1 bg-white h-10 hidden md:block"></div>
+        <div class="flex flex-col py-14 md:px-24 px-12 bg-[#04091e] md:col-span-3 border-y border-gray-200">
             <div class="flex flex-col md:flex-row justify-between gap-10">
                 <div class="flex flex-col gap-4">
                     <h2 class="font-bold text-xl font-Playfair text-white">Top Menu</h2>
@@ -234,6 +258,9 @@
                         <button class="bg-primary text-white py-1 px-2 mt-4 cursor-pointer hover:bg-transparent border border-primary">Submit</button>
                     </div>
                 </div>
+            </div>
+            <div class="flex justify-center mt-8 border-t pt-6">
+                &copy; 2025 | Tailwind Css Single page web app.
             </div>
         </div>
     </footer>
