@@ -1,0 +1,7 @@
+sm: screen width greater than or equal to 640px @media(min-width: 40rem/640px) width>=640
+
+md: screen width greater than or equal to 768px @media(min-width: 48rem/768px) width>=768
+
+lg: screen width greater than or equal to 1024px @media(min-width: 64rem/1024px) width>=1024
+
+xl: screen width greater than or equal to 1280px @media(min-width: 80rem/1280px)
