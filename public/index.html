@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/public/styles/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=room_service" />
 </head>
 <body class="text-gray-600 font-nunito">
-    <div class="grid md:grid-cols-3"> <!--page wrapper-->
-        <div class="md:col-span-1 flex items-start justify-center mt-20"> <!--nav start div-->
-            <nav class="flex flex-col gap-4 items-center justify-center">
-                <div class="md:mb-16">
-                    <h1 class="font-bold uppercase text-xl  lg:text-2xl">My Tailwind Css Food Order</h1>
+    <div class="grid md:grid-cols-4"> <!--page wrapper-->
+        <div class="md:col-span-1 flex items-start justify-center md:mt-20"> <!--nav start div-->
+            <nav class="flex flex-col gap-4 items-center justify-center fixed max-md:w-full py-4 bg-white z-20">
+                <div class="md:mb-6 max-md:mt-4">
+                    <h1 class="font-bold uppercase text-xl lg:text-2xl">My Tailwind Css Food Order</h1>
                 </div>
-                <ul class="w-full flex flex-row items-center md:flex-col gap-4">
+                <ul class="w-full flex flex-row items-center justify-center md:flex-col gap-4">
                     <li class="md:my-4 md:w-full active"><a href="#" class="text-gray-700 active:text-amber-700 font-bold flex gap-3 items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 hidden md:block">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -44,7 +45,7 @@
                 </ul>
             </nav>
         </div><!--nav end div-->
-        <main class="py-4 px-6 bg-gray-50 md:col-span-2">
+        <main class="py-4 px-6 max-md:mt-40 bg-gray-50 md:col-span-3">
             <div class="flex gap-4 justify-center md:justify-end">
                 <a href="#" class="btn text-orange-600 border-primary md:border-2 hover:bg-primary hover:text-white">Log in</a>
                 <a href="#" class="btn text-orange-600 border-primary md:border-2 hover:bg-primary hover:text-white">Sign up</a>
@@ -57,7 +58,7 @@
                 <h4 class="font-bold border-b border-gray-200 pb-2">Latest</h4>
                 <div class="mt-8 grid md:grid-cols-3 gap-10">
                     <!-- latest cards-->
-                    <div class="card hover:shadow-2xl hover:shadow-gray-800">
+                    <div class="card hover:shadow-2xl hover:shadow-gray-800 transition-all ease-in-out duration-500">
                         <img src="images/gallery2.png" alt="gallery2" class="w-full h-60 md:h-80 object-cover">
                         <div class="flex flex-col gap-3 p-4">
                             <span class="font-bold">Recipes name</span>
@@ -72,7 +73,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="card hover:shadow-lg hover:shadow-gray-800">
+                    <div class="card hover:shadow-lg hover:shadow-gray-800 transition-all ease-in-out duration-500">
                         <img src="images/gallery4.png" alt="gallery4" class="w-full h-60 md:h-80 object-cover">
                         <div class="flex flex-col gap-3 p-4">
                             <span class="font-bold">Pizza</span>
@@ -87,7 +88,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="card hover:shadow-lg hover:shadow-gray-800">
+                    <div class="card hover:shadow-lg hover:shadow-gray-800 transition-all ease-in-out duration-500">
                         <img src="images/noodles.jpg" alt="noodles" class="w-full h-60 md:h-80 object-cover">
                         <div class="flex flex-col gap-3 p-4">
                             <span class="font-bold">Noodles-Basic Recipe</span>
@@ -103,24 +104,138 @@
                         </div>
                     </div>
                 </div>
-                <h4 class="font-bold border-b border-gray-200 my-4 pb-2">Most popular</h4>
-                <div class="flex mt-8">
+                <h4 class="font-bold border-b border-gray-200 my-8 pb-2">Most popular</h4>
+                <div class="grid md:grid-cols-3 gap-10 my-8">
                     <!-- Most popular cards-->
-                    <div class="card hover:shadow-gray-800">
-                        <img src="images/gallery2.png" alt="gallery2" class="w-96 h-80 bg-cover">
+                    <div class="card hover:shadow-gray-800 transition-all ease-in-out duration-500">
+                        <img src="images/gallery2.png" alt="gallery2" class="w-full h-60 md:h-80 object-cover">
+                        <div class="flex flex-col p-4">
+                            <span class="font-bold">Recipes name</span>
+                            <span>Author name</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-gray-800 transition-all ease-in-out duration-500">
+                        <img src="images/gallery2.png" alt="gallery2" class="w-full h-60 md:h-80 object-cover">
+                        <div class="flex flex-col p-4">
+                            <span class="font-bold">Recipes name</span>
+                            <span>Author name</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-gray-800 transition-all ease-in-out duration-500">
+                        <img src="images/gallery2.png" alt="gallery2" class="w-full h-60 md:h-80 object-cover">
                         <div class="flex flex-col p-4">
                             <span class="font-bold">Recipes name</span>
                             <span>Author name</span>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center my-2">
-                    <div class="btn hover:shadow-inner bg-yellow-700 font-bold px-2 py-1 text-white rounded shadow-md">
+                <div class="flex justify-center border-t pt-8 border-gray-200 mt-8">
+                    <button class="btn hover:shadow-inner bg-yellow-700 font-bold px-2 pt-4 text-white rounded shadow-md">
                         Load More
+                    </button>
+                </div>
+                <h4 id="about" class="font-bold border-b border-gray-200 my-8 pb-2">About</h4>
+                <div class="flex items-center gap-4 py-8">
+                    <img src="images/about2.png.webp" alt="">
+                    <div class="flex flex-col gap-4">
+                        <h2 class="font-bold text-6xl text-black font-Playfair mb-4">About this site</h2>
+                        <p class="text-justify w-1/2">This is a Tailwind Css project based on the youtube tailwindcss tutorial.
+                            If you want to follow the tutorial then click the link below.
+                        </p>    
+                        <span class="text-sm text-black">Note: the youtube tutorial does not completes all the site.</span>
+                        <a class="text-blue-600 underline mt-1" href="https://www.youtube.com/watch?v=bxmDnn7lrnk&list=PL4cUxeGkcC9gpXORlEHjc5bgnIi5HEGhw&index=1" target="_blank" rel="noopener noreferrer">
+                            Tailwind Css tutorial
+                        </a>
+                        
+                    </div>
+                </div> 
+                <h4 class="font-bold border-b border-gray-200 my-8 pb-2">Services</h4>
+                <div id="services" class="grid grid-cols-3 gap-14 my-16">
+                    <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
+                        <span class="material-symbols-outlined">room_service</span>
+                        <h2 class="font-bold text-2xl">Best Food Recipes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
+                    </div>
+                    <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
+                        <span class="material-symbols-outlined">room_service</span>
+                        <h2 class="font-bold text-2xl">Best Food Recipes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
+                    </div>
+                    <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
+                        <span class="material-symbols-outlined">room_service</span>
+                        <h2 class="font-bold text-2xl">Best Food Recipes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
+                    </div>
+                    <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
+                        <span class="material-symbols-outlined">room_service</span>
+                        <h2 class="font-bold text-2xl">Best Food Recipes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
+                    </div>
+                    <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
+                        <span class="material-symbols-outlined">room_service</span>
+                        <h2 class="font-bold text-2xl">Best Food Recipes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
+                    </div>
+                    <div class="bg-white p-16 shadow flex flex-col justify-center items-center gap-4 cursor-pointer hover:shadow-2xl">
+                        <span class="material-symbols-outlined">room_service</span>
+                        <h2 class="font-bold text-2xl">Best Food Recipes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veritatis aliquam harum nulla illum corrupti vel dignissimos necessitatibus ipsam mollitia!</p>
                     </div>
                 </div> 
             </div>
-        </main>
+        </main>   
     </div>
+    <footer class="grid md:grid-cols-4">
+        <div class="col-span-1 bg-white h-10"></div>
+        <div class="py-14 px-24 bg-[#04091e] md:col-span-3 border-y border-gray-200">
+            <div class="flex flex-col md:flex-row justify-between gap-10">
+                <div class="flex flex-col gap-4">
+                    <h2 class="font-bold text-xl font-Playfair text-white">Top Menu</h2>
+                    <ul>
+                        <li class="footer-links">Top Links 1</li>
+                        <li class="footer-links">Top Links 2</li>
+                        <li class="footer-links">Top Links 3</li>
+                        <li class="footer-links">Top Links 4</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h2 class="font-bold text-xl font-Playfair text-white">Quick Links</h2>
+                    <ul>
+                        <li class="footer-links">Quick Links 1</li>
+                        <li class="footer-links">Quick Links 2</li>
+                        <li class="footer-links">Quick Links 3</li>
+                        <li class="footer-links">Quick Links 4</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h2 class="font-bold text-xl font-Playfair text-white">Features</h2>
+                    <ul>
+                        <li class="text-gray-500 cursor-pointer hover:text-white transition-all duration-300 ease-linear">Feature 1</li>
+                        <li class="text-gray-500 cursor-pointer hover:text-white transition-all duration-300 ease-linear">Feature 2</li>
+                        <li class="text-gray-500 cursor-pointer hover:text-white transition-all duration-300 ease-linear">Feature 3</li>
+                        <li class="text-gray-500 cursor-pointer hover:text-white transition-all duration-300 ease-linear">Feature 4</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h2 class="font-bold text-xl font-Playfair text-white">Resources</h2>
+                    <ul>
+                        <li class="footer-links">Resources 1</li>
+                        <li class="footer-links">Resources 2</li>
+                        <li class="footer-links">Resources 3</li>
+                        <li class="footer-links">Resources 4</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h2 class="font-bold text-xl font-Playfair text-white">NewsLetter</h2>
+                    <span>Stay updated with our latest trends</span>
+                    <div>
+                        <input type="text" name="" id="" placeholder="enter your email" required 
+                        class="bg-white py-1 px-2 w-full outline-none">
+                        <button class="bg-primary text-white py-1 px-2 mt-4 cursor-pointer hover:bg-transparent border border-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

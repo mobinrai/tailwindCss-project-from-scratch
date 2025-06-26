@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import "tailwindcss";
 
 @theme{
     --font-nunito:"Nunito", sans-serif;
+    --font-Playfair:"Playfair Display", serif;
     --color-primary:#FF6363;
     --color-secondary-100:#E2E2D5;
     --color-secondary-200:#888883;
@@ -18,4 +19,8 @@
 
 .btn{
     @apply rounded-full py-2 px-3 cursor-pointer tracking-wide text-xs uppercase font-bold
+}
+
+.footer-links{
+    @apply text-gray-500 cursor-pointer hover:text-white transition-all duration-300 ease-linear
 }
