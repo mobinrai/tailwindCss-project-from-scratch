@@ -6,8 +6,10 @@ This is a single wep page tailwind css project from youtube tutorial videos.
 
 ### Clone the repository:
 
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone git@github.com:mobinrai/tailwindCss-project-from-scratch.git
+
+## Then type command
+cd tailwindCss-project-from-scratch.git
 
 ## Run the command below to install all the dependencies for the project
 npm i
